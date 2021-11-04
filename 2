@@ -1,0 +1,22 @@
+Determinati numerele de forma a2b5 stiind ca produsul cifrelor sale este 120.
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+int i, j,x;
+
+for (i=1;i<=9;i++)
+    for (j=1;j<=9;j++)
+{
+   x=i*2*j*5;
+
+if (x==120)
+    cout <<i<<" "<<j<<endl;
+}
+
+    return 0;
+}
