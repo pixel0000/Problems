@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    long long int CNP,S,AA,LL,ZZ,COPIE_CNP;
+    cin>>CNP;
+    COPIE_CNP=CNP;
+
+    S=COPIE_CNP/1000000000000;
+
+    if (S%2==0)
+    {
+
+        cout <<"Este fata" << " ";
+    }
+
+    else
+    {
+
+        cout <<"Este baiat" << " ";
+
+    }
+
+    CNP=CNP/1000000;
+    ZZ=CNP%100;
+    cout << ZZ << ".";
+    CNP=CNP/100;
+    LL=CNP%100;
+    cout << LL << ".";
+    CNP=CNP/100;
+    AA=CNP%100;
+    if (S<5)
+        S=19;
+    else S=20;
+    cout << S*100+AA;
+
+    return 0;
+}
